@@ -1,3 +1,5 @@
+#include <windows.h>
+
 #include <cv.hpp>
 #include "bea.h"
 #include "cvcheck.h"
