@@ -42,25 +42,26 @@
 	        ['OS=="win"', 
 	        	{
 		        	'include_dirs':['$(OPENCV_ROOT)/build/include', '$(OPENCV_ROOT)/build/include/opencv'],
-		        	'library_dirs':['$(OPENCV_ROOT)/build/x86/vc10/staticlib'],
+		        	'library_dirs':['$(OPENCV_ROOT)/build/x64/vc11/staticlib'],
 		          'libraries':[
-								'-lopencv_core242d.lib', 
-								'-lopencv_imgproc242d.lib', 
-								'-lopencv_calib3d242d.lib',
-								'-lopencv_features2d242d.lib', 
-								'-lopencv_objdetect242d.lib', 
-								'-lopencv_video242d.lib', 
-								'-lopencv_highgui242d.lib', 
-								'-lopencv_contrib242d.lib', 
-								'-lopencv_flann242d.lib', 
-								'-lopencv_ml242d.lib', 
-								'-lopencv_gpu242d.lib', 
-								'-lopencv_legacy242d.lib',
+								'-lopencv_core244.lib',
+								'-lopencv_imgproc244.lib',
+								'-lopencv_calib3d244.lib',
+								'-lopencv_features2d244.lib',
+								'-lopencv_objdetect244.lib',
+								'-lopencv_video244.lib',
+								'-lopencv_highgui244.lib',
+								'-lopencv_contrib244.lib',
+								'-lopencv_flann244.lib',
+								'-lopencv_ml244.lib',
+								'-lopencv_gpu244.lib',
+								'-lopencv_legacy244.lib',
+								'-lIlmImf.lib',
 								'-lzlib.lib',
 								'-llibjasper.lib',
 								'-llibjpeg.lib',
 								'-llibpng.lib',
-								'-llibtiff.lib', 
+								'-llibtiff.lib',
 								'-lcomctl32.lib',
 								'-lvfw32.lib'
 		          ],
@@ -79,7 +80,7 @@
 			            'RuntimeTypeInfo': 'false',
 			            'ExceptionHandling': '0',
 			            'AdditionalOptions': [
-			              '/MP /EHsc', '/MTd'
+			              '/MP /EHsc', '/MT'
 			            ],
 			          },
 			          'VCLibrarianTool': {
@@ -92,7 +93,7 @@
 			            'OptimizeReferences': 2, # /OPT:REF
 			            'EnableCOMDATFolding': 2, # /OPT:ICF
 			            'LinkIncremental': 1, # disable incremental linking
-			          	'AdditionalLibraryDirectories': ['$(OPENCV_ROOT)/build/x86/vc10/staticlib'],
+			          	'AdditionalLibraryDirectories': ['$(OPENCV_ROOT)/build/x64/vc11/staticlib'],
 			          }
 			        }
 		        }
