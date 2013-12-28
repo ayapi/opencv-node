@@ -38,6 +38,7 @@ and edit under 'OS=="win"' to correspond to your env.
 and save it.
 
 ```
+set OPENCV_ROOT=C:/OpenCV
 npm install -g ./
 ```
 
