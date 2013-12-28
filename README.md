@@ -1,4 +1,28 @@
-Purpose 
+About "msvs2012-2013"
+=================
+This branch is forked from [codeboost/opencv-node](https://github.com/codeboost/opencv-node).  
+The purpose is to use it on Windows and Visual Studio 2012/2013.  
+
+It seems like ok in basic usage, but still needs test.
+
+Now testing on...  
+Windows 8 64bit  
+node@0.10.23  
+npm@1.3.17  
+node-gyp@0.12.2  
+Visual Studio 2012 + OpenCV 2.4.4(Pre-built)  
+Visual Studio 2012 + OpenCV 2.4.7(Pre-built)  
+Visual Studio 2013 + OpenCV 2.4.7(Own build)  
+only.
+
+If you are Windows user, please try this branch.  
+Any bug report/question/advice issues are welcome :)
+
+---------------------------------------------------
+
+The following is original(upstream) README
+
+Purpose
 =======
 Expose opencv to the node environment.
 
