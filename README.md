@@ -18,6 +18,29 @@ only.
 If you are Windows user, please try this branch.  
 Any bug report/question/advice issues are welcome :)
 
+Installation
+============
+
+```
+git clone git@github.com:ayapi/opencv-node.git
+cd opencv-node
+git checkout msvs2012-2013
+```
+
+Please open `binding.gyp`  
+and edit under 'OS=="win"' to correspond to your env.
+
+- include_dirs
+- library_dirs
+- libraries filename(last nums differ according to　your OpenCV's version)
+- AdditionalLibraryDirectories
+
+and save it.
+
+```
+npm install -g ./
+```
+
 ---------------------------------------------------
 
 The following is original(upstream) README
