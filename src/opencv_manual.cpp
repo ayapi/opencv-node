@@ -17,7 +17,7 @@ namespace opencvjs {
 #ifdef _WIN32
 	//Todo: Very raw, probably better to process all messages in the queue and then return
 	MSG msg;
-	if (GetMessage(&msg, NULL, 0, 0)){
+	if (PeekMessage(&msg, NULL, 0, 0, PM_REMOVE)){
 		TranslateMessage(&msg);
 		DispatchMessage(&msg);
 	}

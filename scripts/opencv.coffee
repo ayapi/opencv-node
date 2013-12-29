@@ -15,7 +15,7 @@ module.exports.runMessageLoop = ->
 	#I doubt this is the most efficient way to do it, but it seems to do the job for the moment
 	doTick = ->
 		cv.doTick();	#calls GetMessage(), TranslateMessage() and DispatchMessage()
-		process.nextTick doTick
+		setImmediate doTick
 
 	if require('os').type().toLowerCase().indexOf("windows") is 0
 		doTick()
